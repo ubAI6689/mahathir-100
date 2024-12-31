@@ -49,7 +49,7 @@ mahathir-100/
 
 This project is deployed on Vercel. Any push to the main branch will trigger automatic deployment.
 
-Live site: [mahathir-turned-100.vercel.app](https://mahathir-turned-100.vercel.app)
+Live site: [mahathir-100.vercel.app](https://mahathir-100.vercel.app)
 
 ## License
 
