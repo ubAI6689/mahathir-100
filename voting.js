@@ -37,8 +37,8 @@ class VotingSystem {
         if (this.hasVoted) return;
     
         try {
-            // Get IP address
-            const ipResponse = await fetch('/get-ip.php');
+            // Get IP address from our Vercel API endpoint
+            const ipResponse = await fetch('/api/get-ip');
             const ipData = await ipResponse.json();
             
             // Check for existing votes from this IP in last 24 hours
