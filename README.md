@@ -67,4 +67,6 @@ MIT License
 
 Abu - [ub.ai6689@gmail.com](ub.ai6689@gmail.com)
 
+Twitter - [@fiziksis](https:twitter.com/fiziksis)
+
 Project Link: [https://github.com/ubAI6689/mahathir-100](https://github.com/ubAI6689/mahathir-100)
