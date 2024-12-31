@@ -67,7 +67,7 @@ MIT License
 
 Abu - [ub.ai6689@gmail.com](ub.ai6689@gmail.com)
 
-Project Link: [[https://github.com/yourusername/mahathir-100](https://github.com/ubAI6689/mahathir-100)
+Project Link: [https://github.com/ubAI6689/mahathir-100](https://github.com/ubAI6689/mahathir-100)
 
 - Contributing guidelines
 - Contact information
