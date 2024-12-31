@@ -15,8 +15,7 @@
         </svg>
     </a>
     <div class="container">
-        <h1>Mahathir Turns 100</h1>
-        <div class="historic-date">Born on July 10, 1925</div>
+        <h1>Mahathir Turns 100 In:</h1>
         <div class="countdown">
             <div class="time-block">
                 <div class="number" id="days">000</div>
@@ -36,9 +35,32 @@
             </div>
         </div>
         <div class="description">
-            Countdown to Tun Dr. Mahathir Mohamad's 100th Birthday
+            Mahathir was born on 10 July, 1925
+        </div>
+    </div>
+    <div class="voting-section">
+        <h2>Will Mahathir reach 100?</h2>
+        <div class="vote-buttons">
+            <button id="voteYes" class="vote-btn">Yes</button>
+            <button id="voteNo" class="vote-btn">No</button>
+        </div>
+        <div class="vote-results">
+            <div class="result-bar">
+                <div id="yesBar" class="yes-bar"></div>
+            </div>
+            <div class="vote-counts">
+                <span id="yesCount">0</span> Yes / <span id="totalVotes">0</span> Total Votes
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script>
+        // Move supabase-config.js content directly here
+        const supabaseUrl = 'https://fuyqsdolsyfnoxdwikmw.supabase.co'
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ1eXFzZG9sc3lmbm94ZHdpa213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU2MjMzODYsImV4cCI6MjA1MTE5OTM4Nn0._LSYoM3JcRxKod-NEtclxlrluHvjbWON29mP1IbGTcY'
+        const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey)
+    </script>
+    <script src="voting.js"></script>
 </body>
 </html>
