@@ -37,9 +37,28 @@ class VotingSystem {
         if (this.hasVoted) return;
     
         try {
+            // Check if voted in last 24 hours
+            const { data: existingVote } = await supabaseClient
+                .from('votes')
+                .select('created_at')
+                .order('created_at', { ascending: false })
+                .limit(1);
+    
+            if (existingVote?.length > 0) {
+                const lastVote = new Date(existingVote[0].created_at);
+                const hoursSinceLastVote = (Date.now() - lastVote.getTime()) / (1000 * 60 * 60);
+                
+                if (hoursSinceLastVote < 24) {
+                    alert('Please wait 24 hours between votes');
+                    return;
+                }
+            }
+    
             const { error } = await supabaseClient
                 .from('votes')
-                .insert([{ vote_type: voteType }]);
+                .insert([{ 
+                    vote_type: voteType
+                }]);
     
             if (error) throw error;
     
@@ -47,7 +66,6 @@ class VotingSystem {
             document.getElementById('voteYes').disabled = true;
             document.getElementById('voteNo').disabled = true;
             
-            // Add this line to fetch updated votes immediately
             await this.fetchVotes();
             
         } catch (error) {
