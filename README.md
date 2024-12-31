@@ -68,8 +68,3 @@ MIT License
 Abu - [ub.ai6689@gmail.com](ub.ai6689@gmail.com)
 
 Project Link: [https://github.com/ubAI6689/mahathir-100](https://github.com/ubAI6689/mahathir-100)
-
-- Contributing guidelines
-- Contact information
-
-You should customize the email, username, and project links before pushing to GitHub. Would you like me to help you modify any part of this README?
