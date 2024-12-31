@@ -37,10 +37,15 @@ class VotingSystem {
         if (this.hasVoted) return;
     
         try {
-            // Check if voted in last 24 hours
+            // Get IP address
+            const ipResponse = await fetch('/get-ip.php');
+            const ipData = await ipResponse.json();
+            
+            // Check for existing votes from this IP in last 24 hours
             const { data: existingVote } = await supabaseClient
                 .from('votes')
                 .select('created_at')
+                .eq('ip_address', ipData.ip)
                 .order('created_at', { ascending: false })
                 .limit(1);
     
@@ -49,7 +54,7 @@ class VotingSystem {
                 const hoursSinceLastVote = (Date.now() - lastVote.getTime()) / (1000 * 60 * 60);
                 
                 if (hoursSinceLastVote < 24) {
-                    alert('Please wait 24 hours between votes');
+                    alert('Please wait 24 hours between votes from the same IP');
                     return;
                 }
             }
@@ -57,7 +62,9 @@ class VotingSystem {
             const { error } = await supabaseClient
                 .from('votes')
                 .insert([{ 
-                    vote_type: voteType
+                    vote_type: voteType,
+                    ip_address: ipData.ip,
+                    user_agent: navigator.userAgent
                 }]);
     
             if (error) throw error;
