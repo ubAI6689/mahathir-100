@@ -1,6 +1,3 @@
-Here's a comprehensive README.md file for your project:
-
-```markdown
 # Mahathir Turns 100
 
 A countdown website celebrating Tun Dr. Mahathir Mohamad's upcoming 100th birthday on July 10, 2025.
@@ -68,16 +65,10 @@ MIT License
 
 ## Contact
 
-Your Name - [your@email.com](mailto:your@email.com)
+Abu - [ub.ai6689@gmail.com](ub.ai6689@gmail.com)
 
-Project Link: [https://github.com/yourusername/mahathir-100](https://github.com/yourusername/mahathir-100)
-```
+Project Link: [[https://github.com/yourusername/mahathir-100]([https://github.com/ubAI6689/mahathir-100](https://github.com/ubAI6689/mahathir-100))](https://github.com/yourusername/mahathir-100)
 
-This README provides:
-- Project overview
-- Setup instructions
-- Development guidelines
-- Deployment information
 - Contributing guidelines
 - Contact information
 
