@@ -1,10 +1,10 @@
 # Mahathir Turns 100
 
-A countdown website celebrating Tun Dr. Mahathir Mohamad's upcoming 100th birthday on July 10, 2025.
+A countdown website celebrating Mahathir's upcoming 100th birthday on July 10, 2025.
 
 ## Overview
 
-This website features a real-time countdown to Tun Dr. Mahathir Mohamad's centennial birthday celebration. The countdown displays days, hours, minutes, and seconds remaining until the historic date.
+This website features a real-time countdown to Mahathir 's centennial birthday celebration. The countdown displays days, hours, minutes, and seconds remaining until the historic date.
 
 ## Features
 
